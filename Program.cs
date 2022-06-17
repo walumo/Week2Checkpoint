@@ -66,7 +66,7 @@ namespace Week2Checkpoint
 
                 Console.ReadKey();
                 var smallCity = (from p in cities orderby p.Population select p).First();
-                Console.WriteLine("\nDid you know that by population the smallest city is {0} with population of {1}?",smallCity.Name,smallCity.Population);
+                Console.WriteLine("\nDid you know that by population the smallest city \nin database is {0} with population of {1}?",smallCity.Name,smallCity.Population);
                 Console.ReadKey();
             }
 
