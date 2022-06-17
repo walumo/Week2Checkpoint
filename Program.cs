@@ -20,7 +20,7 @@ namespace Week2Checkpoint
 
         public static IEnumerable<City> FindCityByFirstAndLast(List<City> list, List<string> input)
         {
-            return list.Where(p => (p.Name[0].ToString().ToLower().ToLower() == input[0]) && p.Name[p.Name.Length-1].ToString() == input[1]);
+            return list.Where(p => (p.Name[0].ToString().ToLower() == input[0]) && p.Name[p.Name.Length-1].ToString().ToLower() == input[1]);
         }
     }
     static class Program
